@@ -1,14 +1,96 @@
+body{
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
 
+::selection{
+  background-color: #ffd000a1;
+  color: rgba(10, 10, 10, 0.942);
+}
 
+.svg-icon{
+  width: 60px;
+}
 
+.logo--course{
+  display: flex;
+  align-items: center;
+  .logo{
+    width: 30px;
+  }
+  p{
+    margin-left: 10px;
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+  }
+}
 
+a{
+  text-decoration: none;
+}
 
+h2{
+  text-align: center;
+  font-size: 25px;
+}
 
+h3{
+  font-size: 22px;
+}
 
+h4{
+  font-size: 20px;
+}
 
+h5{
+  color: white;
+  font-size: 16px;
+  
+}
 
+hr{
+  width: 60px;
+  border: none;
+  height: 5px;
+  background-color: #ffb606;
+}
 
+.button{
+  width: fit-content;
+  color: white;
+  padding: 15px 35px;
+  background-color: #ffb606;
+  border: none;
+  transition: all .3s ease-in-out;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  &:hover{
+  box-shadow: 5px 5px 15px rgb(33, 33, 33);
+  transition: all .3s ease-in-out;
 
+  }
+}
 
+.displaynone{
+  display: none;
+}
 
+.typetext{
+    border: none;
+    padding: 15px 30px;
+    width: 95%;
+    margin: 0 auto 20px;
+}
 
+.footer--txt{
+  color: #5d5d5d;
+  font-size: 14px;
+  font-weight: bold;
+  a{
+    color: #5d5d5d;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

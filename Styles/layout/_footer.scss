@@ -1,0 +1,111 @@
+footer{
+  background-color: #1a1a1a;
+  padding: 100px 0 20px;
+  > div{
+    width: 95%;
+    margin: 0 auto;
+    .subscribe{
+      border-bottom: 2px solid gray;
+      margin-bottom: 80px;
+      padding-bottom: 80px;
+      h2{
+        color: white;
+        margin-bottom: 50px;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .button{
+          padding: 12px 40px;
+          text-transform: capitalize;
+          font-size: 16px;
+        }
+      }
+    }
+    .footer--nav{
+      border-bottom: 2px solid gray;
+      padding-bottom: 80px;
+      margin-bottom: 40px;
+      > div:first-child{
+        .logo--course p{
+          color: white;
+        }
+        p:not(.logo--course p){
+          color: #5d5d5d;
+          line-height: 30px;
+          font-size: 13px;
+          font-weight: bold;
+        }        
+      }
+      div{
+        nav{
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          a{
+            width: fit-content;
+            margin-bottom: 10px;
+            &:hover{
+              color: #ffb606;
+            }
+          }
+        }
+      }      
+      .footer--contacts{
+        .svg-icon{
+          width: 25px;
+          margin-right: 10px;
+        }
+        div{
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    .copyrights{
+      text-align: center;
+      font-size: 14px;
+      padding-bottom: 30px;
+
+      a{
+        color: #ffb606;
+      }
+      .fa-brands{
+        margin: 10px 15px;
+        color: white;
+        font-weight: normal;
+        &:hover{
+          color: #ffb606;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
