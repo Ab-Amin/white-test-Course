@@ -8,6 +8,7 @@
       width: 95%;
       margin: 0 auto;
       color: white;
+      cursor: pointer;
       
       display: flex;
       margin-bottom: 30px;
@@ -39,61 +40,61 @@
   }
 
   // popular courses: grid 3*1 on Pc ?
-  section:nth-of-type(2){
-    h2{
-      margin-bottom: 80px;
-    }
+  // .popular_courses{
+  //   h2{
+  //     margin-bottom: 80px;
+  //   }
 
-    > div{
-      width: 95%;
-      margin: 0 auto 70px;
-      text-align: center;
-      background-color: rgb(241, 241, 241);
-      h4{
-        margin-bottom: 0;
-        a{
-          color: #1a1a1a;
-        }    
-      }
-      p{
-        margin: 0 auto 35px;
-        font-size: 12px;
-        color: rgb(128, 128, 128);
-        font-weight: bold;
-      }
-      .author{
-        background-color: rgb(219, 219, 219);
-        height: 65px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        div{
-          display: flex;
-          padding: 10px 30px;
-          font-weight: bold;
-          font-size: 14px;
-          img{
-            border-radius: 50%;
-            margin-right: 20px;
-          }
-          span{
-            color: rgb(128, 128, 128);
-          }
-        }
-        a{
-          background-color: #ffb606;
-          height: 100%;
-          width: 65px;
-          color: white;
-          font-weight: bold;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 18px;
-        }
-      }
-    }
-  }
+  //   > div{
+  //     width: 95%;
+  //     margin: 0 auto 70px;
+  //     text-align: center;
+  //     background-color: rgb(241, 241, 241);
+  //     h4{
+  //       margin-bottom: 0;
+  //       a{
+  //         color: #1a1a1a;
+  //       }    
+  //     }
+  //     p{
+  //       margin: 0 auto 35px;
+  //       font-size: 12px;
+  //       color: rgb(128, 128, 128);
+  //       font-weight: bold;
+  //     }
+  //     .author{
+  //       background-color: rgb(219, 219, 219);
+  //       height: 65px;
+  //       display: flex;
+  //       justify-content: space-between;
+  //       align-items: center;
+  //       div{
+  //         display: flex;
+  //         padding: 10px 30px;
+  //         font-weight: bold;
+  //         font-size: 14px;
+  //         img{
+  //           border-radius: 50%;
+  //           margin-right: 20px;
+  //         }
+  //         span{
+  //           color: rgb(128, 128, 128);
+  //         }
+  //       }
+  //       a{
+  //         background-color: #ffb606;
+  //         height: 100%;
+  //         width: 65px;
+  //         color: white;
+  //         font-weight: bold;
+  //         display: flex;
+  //         justify-content: center;
+  //         align-items: center;
+  //         font-size: 18px;
+  //       }
+  //     }
+  //   }
+  // }
 
   // register&search: grid 2*1 on pc ?
   section:nth-of-type(3){
@@ -135,6 +136,9 @@
           color: #1a1a1a;
           margin: 0 auto 50px;
         }
+        input{
+          width: 95%;
+        }
         
       }
     }
@@ -142,7 +146,7 @@
 
   // our services: : grid 3*2 on pc ?
   section:nth-of-type(4){
-    margin-top: 100px;
+    margin: 100px auto;
     .svg-icon{
       width: 50px;
     }
@@ -197,8 +201,9 @@
         }
         p:first-of-type{
           color: #ffb606;
-          font-size: 20px;
+          font-size: 16px;
           margin-bottom: 0;
+          text-transform: uppercase;
         }
         p:last-of-type{
           margin-top: 0;

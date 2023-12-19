@@ -62,14 +62,18 @@ hr{
   padding: 15px 35px;
   background-color: #ffb606;
   border: none;
-  transition: all .3s ease-in-out;
+  transition: all .15s ease-in-out;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
   &:hover{
   box-shadow: 5px 5px 15px rgb(33, 33, 33);
   transition: all .3s ease-in-out;
-
+  }
+  &:active{
+    scale: 0.99;
+    transition: all .15s ease-in-out;
+    box-shadow: 1px 1px 15px rgb(33, 33, 33);
   }
 }
 
@@ -94,3 +98,86 @@ hr{
     font-weight: bold;
   }
 }
+
+.wrapper{
+  width: 95%;
+  margin: 0 auto;
+  
+}
+
+// --------- popular courses: homepage & course page
+.popular_courses{
+  h2{
+    margin-bottom: 80px;
+  }
+  > div{
+    // width: 95%;
+    margin: 0 auto 70px;
+    > div{
+      margin-bottom: 80px;
+      text-align: center;
+      background-color: rgb(241, 241, 241);
+      .title{
+        h4{
+          margin-bottom: 0;
+          a{
+            color: #1a1a1a;
+          }    
+        }
+        p{
+          margin: 0 auto 35px;
+          font-size: 12px;
+          color: rgb(128, 128, 128);
+          font-weight: bold;
+        }
+      }
+      .author{
+        background-color: rgb(219, 219, 219);
+        height: 65px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        div{
+          display: flex;
+          padding: 10px 30px;
+          font-weight: bold;
+          font-size: 14px;
+          img{
+            border-radius: 50%;
+            margin-right: 20px;
+          }
+          p{
+            // margin: 0;
+          }
+          span{
+            color: rgb(128, 128, 128);
+          }
+        }
+        a{
+          background-color: #ffb606;
+          height: 100%;
+          width: 65px;
+          color: white;
+          font-weight: bold;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

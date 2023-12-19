@@ -1,0 +1,71 @@
+.contact_page{
+  header{
+    background: url(../img/contact_background.jpg) top/cover;
+    height: 40vh;
+    position: relative;
+    margin-bottom: 120px;
+  }
+
+  .typetext{
+    background-color:#eaeaea;
+  }
+  .svg-icon{
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  textarea{
+    resize: vertical;
+    min-height: 45px;
+  }
+
+
+  section{
+    > div{
+      margin-top: 100px;
+      h2{
+        text-align: left;
+        font-size: 30px;
+      }
+    }
+
+    > div:first-child{
+      h2{
+        margin-bottom: 80px;
+      }
+      input, textarea{
+        width: 100%;
+      }
+    }
+
+    > div:last-child{
+      p{
+        font-size: 12px;
+        color: rgb(128, 128, 128);
+        line-height: 30px;
+      }
+      .footer--txt{
+        margin: 110px 0;
+        div{
+          margin: 20px 0;
+          color: rgb(128, 128, 128);
+          font-weight: normal;
+        }
+      }
+    }
+
+  }
+
+  .map{
+    .google-map{
+      width: 95%;
+      margin: 0 auto 100px;
+    }
+    
+  }
+
+
+
+
+
+}
