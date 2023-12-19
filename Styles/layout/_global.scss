@@ -24,6 +24,17 @@ body{
     font-size: 15px;
     color: black;
   }
+  @media screen and (min-width:600px) {
+    .logo{
+      width: 50px;
+    }
+    p{
+      font-size: 22px;
+    }
+  }
+  @media screen and (min-width:920px) {
+    
+  }
 }
 
 a{
@@ -117,11 +128,17 @@ hr{
       margin-bottom: 80px;
       text-align: center;
       background-color: rgb(241, 241, 241);
+      img{
+        width: 100%;
+      }
       .title{
         h4{
           margin-bottom: 0;
           a{
             color: #1a1a1a;
+            &:hover{
+              color: #5d5d5d;
+            }
           }    
         }
         p{
@@ -143,6 +160,8 @@ hr{
           font-weight: bold;
           font-size: 14px;
           img{
+            width: 45px;
+            height: 45px;
             border-radius: 50%;
             margin-right: 20px;
           }
@@ -166,7 +185,27 @@ hr{
         }
       }
     }
+    @media screen and (min-width:920px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      max-width: 1024px;
+      > div{
+        max-width: 300px;
+        // .titles{}
+        .author{
+          text-align: left;
+          img{
+            margin-top: 5px;
+          }
+          
+        }
+      }
+    }
+
   }
+
+
 }
 
 

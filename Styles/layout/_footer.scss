@@ -17,13 +17,26 @@ footer{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        max-width: 500px;
+        margin: 0 auto;
         .button{
           padding: 12px 40px;
           text-transform: capitalize;
           font-size: 16px;
           cursor: pointer;
         }
+        @media screen and (min-width:920px) {
+          display: flex;
+          flex-direction: row;
+          .typetext{
+            margin-bottom: 0;
+          }
+          .button{
+            height: 45px;
+          }
+        }
       }
+      
     }
     .footer--nav{
       border-bottom: 2px solid gray;
@@ -82,6 +95,27 @@ footer{
           color: #ffb606;
         }
       }
+    }
+  }
+
+  @media screen and (min-width:920px) {
+    .footer--nav{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      max-width: 1024px;
+      margin: 0 auto;
+
+      > div:first-child{
+        padding-right: 60px;
+      }
+    }
+    .copyrights{
+      display: flex;
+      max-width: 1024px;
+      margin: 0 auto;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 }

@@ -1,7 +1,6 @@
 header{
   background: url(../img/slider_background.jpg) center/cover;
   height: 100vh;
-
   nav{
     background-color: white;
     width: 90%;
@@ -18,8 +17,11 @@ header{
     align-items: center;
     padding: 20px;
 
-    & a:not(a:first-of-type, a:last-of-type){
+    a:not(a:first-of-type, a:last-of-type){
       display: none;
+      &:hover{
+        color: #ffb606;
+      }
     }
 
     .burger-menu{
@@ -37,6 +39,35 @@ header{
       }
     }
     
+
+    @media screen and (min-width:600px) {
+      height: 100px;
+      padding: 0 50px;
+    }
+    @media screen and (min-width:920px) {
+      top: 50px;
+      max-width: 1000px;
+      a:not(a:first-of-type, .phone-number, a:last-of-type){
+        display: flex;
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        align-items: center;
+      }
+      a:last-of-type{
+        display: none;
+      }
+    }
+    @media screen and (min-width:1200px) {
+      .phone-number{
+        display: block;
+        background-color: #ffb606;
+
+        img{
+          width: 30px;
+        }
+      }
+    }
   }
   .main-title{
     position: absolute;
@@ -46,7 +77,8 @@ header{
     h1{
       margin: 0;
       color: white;
-      white-space: nowrap;
+      white-space: wrap;
+      text-align: center;
       font-size: 45px;
       font-weight: normal;
       transition: all .3s ease-in-out;
@@ -61,9 +93,69 @@ header{
       }
     }
   }
+}
+@media screen and (min-width:920px) {
+  .main_page{
+    header{
+      h1{
+        font-size: 50px;
+      }
+      .displaynone{
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transform: translateX(50%);
 
-
-
+        display: flex;
+        // flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        max-width: 1024px;
+        
+        color: white;
+        > div{
+          background-color: #1a1a1a;
+          width: 280px;
+          margin-bottom: 50px;
+          display: flex;
+          white-space: nowrap;
+          align-items: center;
+          padding: 50px 20px;
+          cursor: pointer;
+          img{
+            margin-right: 15px;
+          }
+          h3{
+            margin: 10px 0;
+          }
+          a{
+            color: white;
+            text-transform: uppercase;
+            font-size: 12px;
+            &:hover{
+                color: black;
+            }
+          }
+          &:hover{
+            background-color: #ffb606;
+            img{
+              filter: brightness(100);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1200px) {
+  header{
+    .categorie{
+      > div{
+        padding: 50px 50px;
+      }
+    }
+  }
+  
 }
 
 
